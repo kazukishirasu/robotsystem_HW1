@@ -6,17 +6,18 @@ LED
 ブレッドボード  
 抵抗（220Ω）  
 ジャンパー線  
-##**環境**
-Ubuntu 18.04 LTS
-##**配線**
-GPIO 25とGNDに接続する。
-##**実行方法**
-'''
-$ git clone https://github.com/kazukishirasu/robotsystem_HW1.git
-$ make
-$ sudo rmmod myled
-$ sudo insmod myled.ko
-$ sudo chmod 666 /dev/myled0
-$ echo 1 > /dev/myled0
-'''
-上記のコマンドを上から順に実行する。
+##**環境**  
+Ubuntu 18.04 LTS  
+##**配線**  
+GPIO 25とGNDに接続する。  
+##**実行方法**  
+```
+$ git clone https://github.com/kazukishirasu/robotsystem_HW1.git  
+$ make  
+$ sudo rmmod myled  
+$ sudo insmod myled.ko  
+$ sudo chmod 666 /dev/myled0  
+$ echo 1 > /dev/myled0  
+```  
+上記のコマンドを上から順に実行する。  
+[実行時の動画](https://youtu.be/-zq_EfpfOzQ)
