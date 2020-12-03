@@ -29,3 +29,6 @@ $ echo 1 > /dev/myled0
 - 今回は「**－・－　・－　－－・・　・・－　－・－　・・**（KAZUKI）」というモールス信号を表現した。
 
 - [実行時の動画](https://youtu.be/-zq_EfpfOzQ)  
+***
+## **参考資料**
+モールス信号(https://images.app.goo.gl/aD6JNsrwYYHWkuCFA)  
