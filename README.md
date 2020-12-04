@@ -21,7 +21,8 @@
 ## **実行方法**  
 - 以下のコマンドを上から順に実行する。  
 ```
-$ git clone https://github.com/kazukishirasu/robotsystem_HW1.git  
+$ git clone https://github.com/kazukishirasu/robotsystem_HW1.git 
+$ cd robotsystem_HW1  
 $ make  
 $ sudo rmmod myled  
 $ sudo insmod myled.ko  
@@ -37,3 +38,5 @@ $ echo 1 > /dev/myled0
 ***
 ## **参考資料**
 モールス信号(https://images.app.goo.gl/aD6JNsrwYYHWkuCFA)  
+***
+共同開発者・・・髙橋祐樹、中島勇
