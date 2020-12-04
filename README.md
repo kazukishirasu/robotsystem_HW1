@@ -13,7 +13,7 @@
   -  オス~オス×1
 ***
 ## **環境**  
-- Ubuntu 20.04.1 LTS  
+- Ubuntu 20.04 LTS  
 ***
 ## **配線**  
 - GPIO 25を赤色LED、GPIO 24をRGB LEDの赤色、GPIO 23を緑色、GPIO 22を青色、GNDに接続する。  
