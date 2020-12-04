@@ -22,7 +22,7 @@
 - 以下のコマンドを上から順に実行する。  
 ```
 $ git clone https://github.com/kazukishirasu/robotsystem_HW1.git 
-$ cd robotsystem_HW1  
+$ cd robotsystem_HW1
 $ make  
 $ sudo rmmod myled  
 $ sudo insmod myled.ko  
