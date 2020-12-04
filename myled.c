@@ -19,11 +19,24 @@ static volatile u32 *gpio_base = NULL;
 static ssize_t led_write(struct file* filp, const char* buf, size_t count, loff_t* pos)
 {
 	char c;
-	int i;
+	int n, i;
 	if(copy_from_user(&c,buf,sizeof(char)))
 		return -EFAULT;
 
 	if(c == '1'){
+		gpio_base[7] = 1 << 24;
+		msleep(1500);
+		gpio_base[10] = 1 << 24;
+		gpio_base[7] = 1 << 24;
+		gpio_base[7] = 1 << 23;
+		msleep(1500);
+		gpio_base[10] = 1 << 24;
+		gpio_base[10] = 1 << 23;
+		gpio_base[7] = 1 << 23;
+		msleep(1500);
+		gpio_base[10] = 1 << 23;
+
+
 		for(i = 0; i < 35; i++){
 			switch(i){
 				case 1:
@@ -68,6 +81,12 @@ static ssize_t led_write(struct file* filp, const char* buf, size_t count, loff_
 					
 			}
 		}
+
+	}else if(c == '1'){
+		gpio_base[10] = 1 << 25;
+		gpio_base[10] = 1 << 24;
+		gpio_base[10] = 1 << 23;
+		gpio_base[10] = 1 << 22;
 	}
 
 	return 1;
@@ -120,6 +139,21 @@ static int __init init_mod(void)
 	const u32 shift = (led%10)*3;
 	const u32 mask = ~(0x7 << shift);
 	gpio_base[index] = (gpio_base[index] & mask) | (0x1 << shift);
+	const u32 led_r = 24;
+	const u32 index_r = led_r/10;
+	const u32 shift_r = (led_r%10)*3;
+	const u32 mask_r = ~(0x7 << shift_r);
+	gpio_base[index_r] = (gpio_base[index_r] & mask_r) | (0x1 << shift_r);
+	const u32 led_g = 23;
+	const u32 index_g = led_g/10;
+	const u32 shift_g = (led_g%10)*3;
+	const u32 mask_g = ~(0x7 << shift_g);
+	gpio_base[index_g] = (gpio_base[index_g] & mask_g) | (0x1 << shift_g);
+	const u32 led_b = 22;
+	const u32 index_b = led_b/10;
+	const u32 shift_b = (led_b%10)*3;
+	const u32 mask_b = ~(0x7 << shift_b);
+	gpio_base[index_b] = (gpio_base[index_b] & mask_b) | (0x1 << shift_b);
 
 	return 0;
 }
