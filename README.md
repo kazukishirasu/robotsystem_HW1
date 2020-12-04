@@ -13,7 +13,7 @@
   -  オス~オス×1
 ***
 ## **環境**  
-- Ubuntu 18.04 LTS  
+- Ubuntu 20.04.1 LTS  
 ***
 ## **配線**  
 - GPIO 25を赤色LED、GPIO 24をRGB LEDの赤色、GPIO 23を緑色、GPIO 22を青色、GNDに接続する。  
@@ -37,6 +37,6 @@ $ echo 1 > /dev/myled0
 - [実行時の動画](https://youtu.be/JRdC526gu3k)  
 ***
 ## **参考資料**
-モールス信号(https://images.app.goo.gl/aD6JNsrwYYHWkuCFA)  
+-  モールス信号(https://images.app.goo.gl/aD6JNsrwYYHWkuCFA)  
 ***
 共同開発者・・・髙橋祐樹、中島勇
