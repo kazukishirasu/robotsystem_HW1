@@ -37,9 +37,9 @@ $ echo 1 > /dev/myled0
 - [実行時の動画](https://youtu.be/JRdC526gu3k)  
 ***
 ## **ライセンス**  
--  [GNU General Public License v3.0]https://github.com/kazukishirasu/robotsystem_HW1/blob/main/COPYING
+-  [GNU General Public License v3.0](https://github.com/kazukishirasu/robotsystem_HW1/blob/main/COPYING)
 ***
 ## **参考資料**
--  モールス信号(https://images.app.goo.gl/aD6JNsrwYYHWkuCFA)  
+-  [モールス信号](https://images.app.goo.gl/aD6JNsrwYYHWkuCFA)  
 ***
 共同開発者・・・髙橋祐樹
