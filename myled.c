@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-3.0-only
 /*
-    Copyright (C) 2020  Kazuki Shirasu. All right reserved.
+    Copyright (C) 2020 Ryuichi Ueda and Kazuki Shirasu. All right reserved.
 */
 #include <linux/module.h>
 #include <linux/fs.h>
